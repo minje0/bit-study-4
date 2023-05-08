@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #n1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+
+        #n1 ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+        #n1 li {
+                margin: 0 10px;
+            }
+
+        #n1 a {
+                display: block;
+                padding: 20px;
+                color: #333;
+                text-decoration: none;
+            }
+
+        #n1 a:hover {
+                background-color: #f2f2f2;
+            }
+
+    </style>
+</head>
+<body>
+     <!-- header box------------------------------------------------------------------------------ -->    
+     <header id="header">
+        <div class="content-box">
+            <div id="backMain">
+                <h1><b>MAIN PAGE</b> </h1>
+                <p><b>이름: 이영은 | 나이: 1998년생 | 전망: 밝음 | 기타: 슈퍼개발자 지망생</b></p>
+                <section>
+                    <h2><b>Who am I?</b></h2>
+                    <h3><b>나를 위한 공간</b></h3>
+                        <nav id="n1">
+                            <ul>
+                                <li><b><a href="history.html">저를 소개합니다</a></b></li>
+                                <li><b><a href="../member/minihompi.html">마이페이지</a></b></li>
+                                <li><b><a href="../member/login.html">로그인</a></b></li>
+                                <li><b><a href="../member/signup.html">회원가입</a></b></li>
+                            </ul>
+                        </nav>
+                </section>
+            </div>
+    </header>
+
+
+
+
+    <!-- main box------------------------------------------------------------------------------ -->
+<div id="mainbox">   
+    <div id="dropdownMenu">     
+        <nav>
+            <h2>공간 둘러보기</h2>
+                <ul>
+                    <li><a href="../addpofilo/pofiloplan.html">DevLee's Portfolio</a></li>
+                    <li><a href="../freepage/freeboard.html">자유게시판</a></li>
+                    <li><a href="../freepage/youtube.html">DevLee's YouTube</a></li>
+                </ul>
+        </nav>
+    </div>
+ 
+        <div class="content-box">
+            <aside id="aside">
+                    <h1>오늘의 일기</h1>
+                    <nav>
+                        <ul>
+                            <li><b>[01]</b> <a href="../privatehome/dailynote.html"><strong>2023.04.26. "나로 말할 것 같으면..."</strong></a></li>
+                        </ul>
+                    </nav>
+            </aside>
+
+            <main id="main">
+                <h1><b>작성 글 구경하기</b></h1>
+                <form>
+                    <fieldset>
+                        <legend>검색입력필드</legend>
+                        <label for="검색분류"></label>
+                        <select>
+                            <option value="writer">글쓴이</option>
+                            <option value="title">제목</option>
+                        </select>
+                        <label for="검색창"></label>
+                        <input type="text">
+                        <input type="submit" value="검색">
+                    </fieldset>
+                </form>
+            
+            
+            </main>
+        </div>              
+    </div>  
+</div> 
+    <!----------------------사이드바------------------------------------->
+		<aside>
+			<p>[ aside ]</p>
+		</aside>
+</body>
+</html>

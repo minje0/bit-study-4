@@ -1,0 +1,85 @@
+table {
+    border-collapse: collapse; /* 표의 경계선을 합쳐서 나타내기 */
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+   
+}
+  
+  td, th {
+    border: 3px solid pink; /* 각 칸의 경계선을 2픽셀 두께의 분홍색으로 표현하기 */
+    padding: 0px; /* 각 칸의 내부 여백 설정하기 */
+  }
+
+  th{
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  td{
+    height: 60px;
+    vertical-align: top;
+  }
+
+  table + table {
+    margin-top: 50px;
+  }
+  
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    padding: auto;
+    box-sizing: border-box;
+    overflow: initial;
+  }
+
+  img:hover {
+    opacity: 0.8; /* 이미지를 약간 어둡게 표시 */
+    filter: grayscale(50%); /* 이미지를 회색으로 만들어서 흑백처럼 보이도록 함 */
+  }
+
+  .image-container {
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .image-container:hover {
+    transform: scale(1.5);
+    
+    
+  }
+
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    display: none;
+  }
+  
+  .image-container:hover .text-overlay {
+    display: block;
+
+  }
+  
+  .text-overlay p {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Hi+Melody&family=Libre+Baskerville&family=Single+Day&display=swap');
+  .gallery{
+    font-family: 'Hi Melody', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Single Day', cursive;
+  }
