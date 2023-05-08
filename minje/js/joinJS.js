@@ -10,4 +10,6 @@ passwordToggle.addEventListener('click', () => {
     passwordToggle.classList.add('fa-eye');
   } else {
     passwordInput.type = 'password';
-    confirmPasswordInput.type =
+    confirmPasswordInput.type = 'password';
+  }
+});
