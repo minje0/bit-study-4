@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title >yoojin's page</title>
+	<style>
+		/* 전체 스타일 초기화 */
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			margin: 0;
+			height: 100vh;
+			scroll-snap-type: y mandatory;
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+		}
+
+		header {
+			text-align: center; 
+		
+			height: 10vh;
+			background-color: #dbd6d8;
+			color: rgb(95, 82, 95); /* 제목 색상 */
+  			font-family: Arial, sans-serif; /* 글꼴 */
+		}
+
+		nav {
+			display: flex;
+			justify-content: center;
+			background-color: #dbd6d8;
+			padding: 10px;
+			position: sticky;
+			top: 0;
+			z-index: 1;
+		}
+
+		nav a {
+			margin: 0 10px;
+			text-decoration: none;
+			color: darkgrey;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		nav a:hover {
+			color: black;
+		}
+		
+		section {
+			height: 100vh;
+			scroll-snap-align: start;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 5em;
+			color: white;
+		}
+
+		#section1 {
+			background-image: url("../html/images/main2.png");
+			background-size: cover;
+  			background-position: center center;
+		}
+
+		#section2 {
+			background-image: url("../html/images/section2back.png");
+			background-size: cover;
+  			background-position: center center;
+		}
+		.container {
+   		 	display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 100px;
+		  }
+  
+ 		 .image {
+   		 cursor: pointer;
+   		 /*margin-right: 20px;*/
+
+		max-width: 3%;
+ 		 }
+  
+  		.modal1,
+  		.modal2 {
+			display: none;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: white;
+			padding: 20px;
+			border: 1px solid black;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			width: 33.33%; /* 변경된 너비 */
+  		}
+		  .modal .close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			cursor: pointer;
+			width: 30px;
+			height: 30px;
+			background-image: url('/MyPage/html/images/close.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.modal img {
+			max-width: 30%;
+		}
+  
+		#section3 {
+		display: block;
+ 		 background-color: #f5d0e1;
+  		height: auto;
+}
+
+	#section3 article {
+		display: flex;
+		flex-direction: column;
+	}
+
+		#section3 article .img-div {
+ 		 display: grid;
+  		grid-template-columns: repeat(5, 1fr);
+  		grid-auto-rows: minmax(0, 1fr);
+}
+
+		#section3 img {
+ 		 width: 100%;
+		 height: 100%;
+  		margin: 0;
+  		transition: transform .3s ease;
+				}
+
+		#section3 img:hover {
+  transform: scale(1.1);
+}
+
+
+
+		#section4 {
+			background-image: url("/MyPage/html/images/section4back.png");
+  			background-size: cover;
+		}
+		.image-container {
+		display: flex;
+		/* justify-content: space-between; 이미지 간 간격 유지 */
+		justify-content: space-around;
+		align-items: center; /* 이미지 세로 중앙 정렬 */
+}
+
+		.image-container img {
+		width: 100px; /* 이미지 너비 조정 */
+		height: auto; /* 이미지 높이 자동 조정 */
+		}
+
+		footer {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 10vh;
+			background-color: #dbd6d8;
+		}
+        
+	</style>
+</head>
+<body>
+	<header>
+		<h1>yoojin's page</h1>
+		<nav>
+			<a href="home.html#section1">Home</a>
+			<a href="#section2">About</a>
+			<a href="#section3">My Favorite</a>
+			<a href="#section4">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<section id="section1"></section>
+		<section id="section2">
+			<div class="container">
+				<div class="image" onclick="document.querySelector('.modal1').style.display='block'">
+					<img src="/MyPage/html/images/성격.png" alt="이미지">
+				</div>
+				<div class="modal modal1">
+					<span class="close" onclick="document.querySelector('.modal1').style.display='none'">&times;</span>
+					<h2>성격</h2>
+					<img src="/MyPage/html/images/성격.png" alt="이미지">
+					<p>웅엥웅</p>
+				</div>
+				<div class="image" onclick="document.querySelector('.modal2').style.display='block'">
+					<img src="/MyPage/html/images/취미.png" alt="이미지">
+				</div>
+				<div class="modal modal2">
+					<span class="close" onclick="document.querySelector('.modal2').style.display='none'">&times;</span>
+					<h2>모달창 2</h2>
+					<img src="/MyPage/html/images/취미.png" alt="이미지">
+					<!-- 모달창 내용 추가 -->
+				</div>
+			</div>
+		</section>
+		<section id="section3">
+			<article>
+				<div class="title-div">
+					<h3 style="text-align: center;">♥ My favorite ♥</h3>
+				</div>
+				<div class="img-div">
+					<img src="/MyPage/html/images/곱창.jpeg" alt="image1">
+					<img src="/MyPage/html/images/목화.jpeg" alt="image2">
+					<img src="/MyPage/html/images/holy.jpeg" alt="image3">
+					<img src="/MyPage/html/images/술.jpeg" alt="image4">
+					<img src="/MyPage/html/images/육회.jpeg" alt="image5">
+					<img src="/MyPage/html/images/카페.png" alt="image6">
+					<img src="/MyPage/html/images/소품.jpeg" alt="image7">
+					<img src="/MyPage/html/images/꼬치.png" alt="image8">
+					<img src="/MyPage/html/images/인형.jpeg" alt="image9">
+					<img src="/MyPage/html/images/슬램1.jpg" alt="image10">
+				</div>
+			
+			</article>
+		</section>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<section id="section4">
+			  <div class="image-container">
+				<a href="ponyojoa7467@gmail.com">
+					<i class="fa-regular fa-envelope " style="color:#576059 ;"></i>
+				</a>
+				<a href="https://github.com/yjpotato">
+					<i class="fa-brands fa-github "  style="color:#576059;"></i>
+				</a>
+				<a href="https://yj-potato.tistory.com/">
+					<i class="fa-sharp fa-solid fa-text" style="color:#576059;"></i>
+				</a>
+				<a href="https://z-p42.www.instagram.com/hello_ponyo0_0/?hl=afl">
+					<i class="fa-brands fa-instagram " style="color:#576059;"></i>
+					<!--<img src="fa-brands fa-instagram" style="color: #576059;"></i> -->
+				</a>
+			  </div>
+			  
+		</section>
+	</main>
+	<footer>
+		<p style="color: white;">© yoojin</p>
+	</footer>
+</body>
+</html>
