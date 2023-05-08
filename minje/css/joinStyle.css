@@ -1,0 +1,47 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .form-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .form-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-box input[type="text"],
+  .form-box input[type="password"],
+  .form-box input[type="email"],
+  .form-box input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  #password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .signup-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #0088cc;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+  }
+  
+  

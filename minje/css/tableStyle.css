@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+td {
+    border: 1px solid black;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+}
+th {
+    height: 40px;
+    background-color: lightgray;
+    text-align: center;
+    vertical-align: middle;
+}
+td:nth-child(1),
+th:nth-child(1) {
+  background-color: rgba(234, 44, 44, 0.474);
+}
