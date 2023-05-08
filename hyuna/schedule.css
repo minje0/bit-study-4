@@ -1,0 +1,80 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/* 전체 body 스타일링 */
+body {
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+margin: 0;
+}
+
+/* header 스타일링 */
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+/* header h2 스타일링 */
+header h2 {
+margin: 0;
+}
+
+/* header nav 스타일링 */
+header nav {
+margin-top: 10px;
+}
+
+/* header nav ul 스타일링 */
+header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+/* header nav ul li 스타일링 */
+header nav ul li {
+margin-right: 10px;
+}
+
+/* header nav ul li a 스타일링 */
+header nav ul li a {
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+padding: 5px;
+border-radius: 5px;
+}
+
+/* header nav ul li a:hover 스타일링 */
+header nav ul li a:hover {
+background-color: #555;
+}
+
+/* table 스타일링 */
+table {
+margin: 20px auto;
+border-collapse: collapse;
+width: 90%;
+}
+
+/* table th, td 스타일링 */
+table th, table td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
+
+/* table th 스타일링 */
+table th {
+background-color: #333;
+color: #fff;
+}
+
+/* table td colspan 스타일링 */
+table td[colspan="7"] {
+background-color: #eee;
+font-weight: bold;
+}
