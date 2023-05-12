@@ -1,0 +1,140 @@
+
+ .alFont{
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+  background-image: url("../img/kVDwn1596343125.jpeg");
+}
+
+body {
+  /* background-image: url("../img/kVDwn1596343125.jpeg"); */
+  background-size: cover;
+
+}
+
+
+header{
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: transparent;
+  /*transparent; 배경색을 투명하게 설정하여 이미지가 보이도록 함 */
+}
+
+
+footer {
+  position: fixed; /* 화면에 고정 */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../img/pexels-tom-fisk-1716158.jpg");
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+/* 사진첩 효과 */
+.container {
+    display: flex;
+    width: 80vw;
+    height: 40vw;
+    margin: 0 auto;
+    padding: 2vw;
+    box-sizing: border-box;
+    overflow-x: scroll; /* 가로 스크롤 추가 */
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 1vw;
+    box-shadow: 0 1vw 1.5vw rgba(0, 0, 0, .1);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 4vw);
+    object-fit: cover;
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 2vw;
+    display: block;
+    text-align: center;
+    height: 4vw;
+    line-height: 2.6;
+  }
+  
+  .box:hover {
+    flex: 1 1 50%;
+  }
+  
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.5vw;
+    display: none;
+  }
+  
+  .text-overlay p {
+    font-size: 1.2vw;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* img:hover {
+    opacity: 0.8; /* 이미지를 약간 어둡게 표시 */
+    /* filter: grayscale(50%);  */
+    /* 이미지를 회색으로 만들어서 흑백처럼 보이도록 함 
+  } */
+
+  .prev-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .prev-next:hover {
+    opacity: 1;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      width: 45%;
+      margin: 2.5%;
+    }
+  }
+  span{
+    font-family: 'Hi Melody', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Single Day', cursive;
+  }
