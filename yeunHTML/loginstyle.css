@@ -1,7 +1,7 @@
 body {
     align-items: center;
     background-color: var(--white);
-    background: url("../img/kVDwn1596343125.jpeg");
+    background: url("img/kVDwn1596343125.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
   
   .overlay {
     background-color: var(--lightblue);
-    background: url("../img/kVDwn1596343125.jpeg");
+    background: url("img/kVDwn1596343125.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
